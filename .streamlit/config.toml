@@ -1,0 +1,21 @@
+[theme]
+base = "light"
+primaryColor = "#1f6feb"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f4f6f8"
+textColor = "#1a1a1a"
+font = "sans serif"
+
+[server]
+# `headless` évite le prompt d'accueil « Email: » au premier lancement et
+# empêche Streamlit d'essayer d'ouvrir un navigateur. Cette option est sans
+# effet sur Streamlit Cloud, qui tourne déjà en mode headless.
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+# NB : on ne fixe volontairement ni `server.address` ni `server.port` ici.
+# Ce fichier est versionné et sert aussi au déploiement sur Streamlit Cloud,
+# où la plateforme impose sa propre liaison réseau. Pour un lancement local
+# robuste sous Windows, utilisez `run.ps1` (voir README).

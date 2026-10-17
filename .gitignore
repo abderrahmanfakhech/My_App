@@ -1,0 +1,22 @@
+# Environnement virtuel
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Outils
+.pytest_cache/
+.ruff_cache/
+
+# Modèles entraînés (regénérés par `python train.py` ou au lancement de l'app)
+models/*.joblib
+
+# Éditeurs / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
